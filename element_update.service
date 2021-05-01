@@ -1,0 +1,10 @@
+[Unit]
+Description=Element-Web update script
+
+[Service]
+ExecStartPre=/bin/sleep 60
+ExecStart=/usr/local/bin/element_update.sh start
+
+[Install]
+WantedBy=multi-user.target
+

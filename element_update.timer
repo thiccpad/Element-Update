@@ -1,0 +1,10 @@
+[Unit]
+Description=Update element web
+
+[Timer]
+OnCalendar=daily
+Unit=element_update.service
+
+[Install]
+WantedBy=basic.target
+
